@@ -11,7 +11,7 @@ app.get('/register', (req, res) => {
     fs.appendFile("formdata.text", "\n" + req.query.name + " " + req.query.fname + " " + req.query.meli, (err, data) => { })
     fs.readFile("formdata.text", 'utf8', (err, data) => { console.log(data) })
 })
-app.get('/test', (req, res) => {
+app.get('/test1', (req, res) => {
     res.send('app run mishavad!')
 })
 app.listen(port, () => {
